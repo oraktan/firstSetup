@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Sistem paketlerini güncelle
+sudo apt-get update
+
+# Vim, Git, wget, curl ve lynx paketlerini yükle
+sudo apt-get install -y vim git wget curl lynx terminator
+
 # Hedef dizini belirtin (burada ~ kullanılarak ev dizini ifade edilmiştir)
 target_dir=~
 
@@ -7,7 +13,7 @@ target_dir=~
 source_dir=.
 
 # Dosyaların kopyalanacağı dizine gidin
-cd $source_dir
+cd "$source_dir"
 
 # Her dosya için işlem yapın
 for file in *; do
