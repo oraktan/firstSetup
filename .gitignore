@@ -1,0 +1,14 @@
+# .gitignore
+
+#hariç tutmak istediğim dosyaları buraya ekliyorum 
+
+.git
+.cache
+.config
+.local
+.vim
+.vimviews
+.vimundo
+.vimswap
+.vimbackup
+.vim.20240124_1706128796
