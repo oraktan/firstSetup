@@ -15,19 +15,15 @@ source_dir=.
 # Dosyaların kopyalanacağı dizine gidin
 cd "$source_dir"
 
-# Her dosya için işlem yapın
-for file in *; do
-    # Hedef dizinde aynı isimde bir dosya var mı kontrol edin
-    if [ -e "$target_dir/$file" ]; then
-        # Eğer varsa, dosyanın sonuna ".old" ekleyerek kopyalayın
-        cp "$file" "$target_dir/${file}.old"
-        echo "Dosya kopyalandı: $file -> ${file}.old"
-    else
-        # Eğer yoksa, normal şekilde kopyalayın
-        cp "$file" "$target_dir/"
-        echo "Dosya kopyalandı: $file"
+# Her dosya için işlem yapın, gizli dosyaları da içerir
+for file in .* *; do
+    # Nokta ile başlamayan dosyaları ve dizinleri kontrol et
+    if [[ ! "$file" =~ ^\.$ && ! "$file" =~ ^\.\.$ ]]; then
+        # Hedef dizinde aynı isimde bir dosya var mı kontrol edin
+        if [ -e "$target_dir/$file" ]; then
+            # Eğer varsa, dosyanın sonuna ".old" ekleyerek kopyalayın
+            cp "$file" "$target_dir/${file}.old"
+        fi
     fi
 done
-
-echo "İşlem tamamlandı."
 
