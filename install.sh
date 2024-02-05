@@ -35,4 +35,4 @@ try
 catch
 endtry' > ~/.vimrc
 
-echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
+echo "Installed Vim configuration successfully!"
