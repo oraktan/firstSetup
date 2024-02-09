@@ -9,6 +9,7 @@ sudo apt-get install -y vim git wget curl lynx terminator
 
 mv ~/.bashrc ~/.bashrc.old
 mv ~/.vimrc ~/.vimrc.old
+mv ~/.alias ~/.alias.old
 
 cp -r . ~/
 
