@@ -31,7 +31,7 @@ source ~/.vim_runtime/filetypes.vim
 source ~/.vim_runtime/plugins_config.vim
 source ~/.vim_runtime/extended.vim
 try
-  source ~/.vim_runtime/my_configs.vim
+  source ~/.vim_runtime/my_config.vim
 catch
 endtry' > ~/.vimrc
 

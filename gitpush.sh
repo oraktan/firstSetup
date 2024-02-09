@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git add .      # Tüm dosyaları (dizin içeriğini) ekleyin
-git commit -m "alias file have been added "  # Bir commit oluşturun
+git commit -m ".vimrc file have been fixed"  # Bir commit oluşturun
 
 
 #ssh bağlantısının olup olmadığını söylüyor
