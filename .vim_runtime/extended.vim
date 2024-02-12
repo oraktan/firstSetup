@@ -29,8 +29,7 @@ set guioptions-=L
 
 " Colorscheme
 set background=dark
-colorscheme peaksea
-
+colorscheme desert
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
