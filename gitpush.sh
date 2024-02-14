@@ -1,13 +1,21 @@
 #!/bin/bash
 
-git add .      # Tüm dosyaları (dizin içeriğini) ekleyin
-git commit -m ".vimrc file have been fixed"  # Bir commit oluşturun
+# Tüm dosyaları (dizin içeriğini) ekleyin
+git add .
 
+# Kullanıcıdan commit mesajını alın
+echo "Enter your commit message:"
+read commit_message
 
-#ssh bağlantısının olup olmadığını söylüyor
+# Girilen commit mesajıyla bir commit oluşturun
+git commit -m "$commit_message"
+
+# SSH bağlantısının olup olmadığını kontrol edin
 ssh -T git@github.com
 
-
+# Remote URL'yi ayarlayın
 git remote set-url origin git@github.com:oraktan/firstSetup.git
 
-git push origin main  # Değişiklikleri GitHub'a yükleyin
+# Değişiklikleri GitHub'a yükleyin
+git push origin main
+

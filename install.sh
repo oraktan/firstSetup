@@ -5,7 +5,7 @@ sudo apt-get update
 
 # Vim, Git, wget, curl ve lynx paketlerini yükle
 
-sudo apt-get install -y vim git wget curl lynx terminator
+sudo apt-get install -y vim git wget curl lynx terminator htop
 
 mv ~/.bashrc ~/.bashrc.old
 mv ~/.vimrc ~/.vimrc.old
