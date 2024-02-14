@@ -43,4 +43,4 @@ alias untar='tar -zxvf'
 alias tree='tree -C'
 alias pyserve='python3 -m http.server'
 alias catx='batcat'
-
+alias gitc='git clone https://www.github.com/'
