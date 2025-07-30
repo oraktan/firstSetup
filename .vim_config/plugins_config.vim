@@ -12,5 +12,7 @@ Plug 'junegunn/fzf.vim'               " FZF için Vim entegrasyonu
 Plug 'jiangmiao/auto-pairs'           " Parantez eşleştirme
 Plug 'tpope/vim-commentary'           " Yorum satırı ekleme
 Plug 'Yggdroot/indentLine'            " Girinti çizgileri
+Plug 'morhetz/gruvbox'
+
 call plug#end()
 
