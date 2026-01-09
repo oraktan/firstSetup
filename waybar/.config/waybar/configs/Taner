@@ -1,0 +1,68 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+// ### DEFAULT (Laptop)  - Taner//
+{
+"include": [
+  "$HOME/.config/waybar/Modules",
+  "$HOME/.config/waybar/ModulesWorkspaces",
+  "$HOME/.config/waybar/ModulesCustom",
+  "$HOME/.config/waybar/ModulesGroups",
+  "$HOME/.config/waybar/UserModules",
+  ],
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 1,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 5,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+//"custom/menu",
+//"custom/light_dark",
+//"custom/separator#dot-line",
+    "power-profiles-daemon",
+//"group/mobo_drawer",
+	"custom/separator#blank",
+	"group/laptop",
+	"custom/separator#line",
+	"custom/weather",
+	"custom/separator#line",
+//eski	"hyprland/workspaces#rw",
+	
+    "hyprland/workspaces#roman",
+    "hyprland/window",
+	],
+
+"modules-center": [
+	"group/notify",
+	"custom/separator#dot-line",
+	"clock",
+	"custom/separator#line",
+
+	"mpris", 
+	"custom/separator#dot-line",
+	"idle_inhibitor",	
+	"custom/hint",	
+	], 
+
+"modules-right": [
+	"network#speed",
+	"group/connections",
+	"custom/separator#line",
+	"tray",
+    "cpu#forest",
+	"memory#forest",
+	"group/audio",
+	"custom/separator#line",
+	"custom/nightlight",
+//"keyboard-state",
+//"custom/keyboard",
+	"custom/lock",
+	"custom/power",
+	],
+}

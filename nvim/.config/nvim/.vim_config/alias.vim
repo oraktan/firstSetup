@@ -1,0 +1,2 @@
+:abbr ilk #!/bin/bash
+
