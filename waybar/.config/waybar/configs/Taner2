@@ -72,11 +72,13 @@
 //"gtk-layer-shell": true,
 //"margin-bottom": 0,
 
-"modules-left": [
-	"wlr/taskbar",
-	 ],
 
-"modules-center": [
+
+//"modules-left": [
+//	"wlr/taskbar",
+//	 ],
+
+"modules-left": [
 	"hyprland/workspaces#rw", 
 	],
 

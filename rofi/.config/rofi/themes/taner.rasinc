@@ -1,0 +1,27 @@
+configuration {
+    show-icons: true;
+    drun-display-format: "{name}";
+}
+
+element-description {
+    enabled: false;
+}
+
+window {
+    width: 55%;
+    height: 45%;
+}
+
+listview {
+    lines: 12;
+    padding: 6px;
+}
+
+element {
+    padding: 4px;
+}
+
+* {
+    font: "JetBrainsMono Nerd Font 14";
+}
+
