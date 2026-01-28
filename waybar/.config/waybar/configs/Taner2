@@ -32,7 +32,7 @@
   
 "modules-center": [
 	"idle_inhibitor",
-	"clock",  
+	"clock#10",  
 	"custom/light_dark",
 	], 
 
